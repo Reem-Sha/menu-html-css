@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>LaPatisserieVerteSurveyForm</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+<h1 id="title"><span class="french-script">La Patisserie Verte</span><span class="regular-text"> Survey Form 🍰</span></h1>
+<p id="description">Thank you for visiting, please tell us how we did. We would love to hear from you!</p>
+<form type="post" id="survey-form" action="https://register-demo.freecodecamp.org">
+<fieldset>
+  <label id="name-label">Name:<input id="name" type="text" placeholder="Enter your full name" name="full-name" required></label>
+  <label id="email-label">Email (required):<input id="email" name="email-address" placeholder="Enter your email" type="email" required></label>
+  <label id="number-label">Age (optional):<input id="number" placeholder="Age" min="12" max="120" type="number" required></label>
+</fieldset>
+<fieldset>
+  <legend>Where you seated in our:</legend>
+  <label for="indoor" >Indoor Seating<input value="1" id="indoor" type="radio" name="indoor-outdoor" class="inline" checked></label>
+  <label for="outdoor" >Outdoor Seating<input id="outdoor" type="radio" value="2" name="indoor-outdoor" class="inline"></label>
+</fieldset>
+<fieldset>
+  <legend>How likely is it that we will get to see you again soon?</legend>
+  <label for="definitely" >Definitely!<input id="definitely" type="radio" value="1" name="experience" class="inline" checked></label>
+  <label for="maybe">Maybe<input id="maybe" value="2" type="radio" name="experience" class="inline"></label>
+  <label for="notsure" >Not Sure :(<input id="notsure" value="3" type="radio" name="experience" class="inline"></label>
+</fieldset>
+<fieldset>
+  <label>The food at La Patisserie Verte matched my expectations
+    <select id="dropdown" name="opinion">
+      <option value="1">Strongly agree (Loved every bite)</option>
+      <option value="2">Agree (Such good food)</option>
+      <option value="3">Neutral (Hmm not sure)</option>
+      <option value="4">Disagree (Could be improved)</option>
+      <option value="5">Strongly Disagree (Didn't have the best time)</option>
+  <option value="6">Other, please specify below.</option>
+    </select>
+  </label>
+</fieldset>
+<fieldset>
+  <legend>What would you like to see improved?</legend>
+  <label for="service">
+        <input class="inline" id="service" type="checkbox" value="1" name="service">Customer Service
+    <input class="inline" id="presentation" type="checkbox" value="2" name="presentation" >Presentation
+    <input class="inline" id="taste" type="checkbox" value="3" name="taste">Taste
+    <input class="inline" id="variety" type="checkbox" value="4" name="variety">Variety
+</fieldset>
+<fieldset>
+  <label for="feedback">Any suggestions?
+          <textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="Tell us how we did and what we can improve on."></textarea></label>
+<input type="submit" id="submit" value="Submit">
+</fieldset>
+</form>
+  </body>
+</html>

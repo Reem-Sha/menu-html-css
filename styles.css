@@ -1,0 +1,135 @@
+/* General Styling */
+body {
+    font-family: 'Georgia', serif; /* Classy serif font for a French touch */
+    background-color: #f4f1e3; /* Soft beige for a warm and inviting background */
+    color: #3e4c39; /* Deep green for the text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align items in a column */
+    min-height: 100vh;
+  }
+  
+  /* Title and Description */
+  #title {
+    text-align: center;
+    font-size: 2.5rem; /* Increased font size for the title */
+    color: #2f4f4f; /* Dark green for a classic feel */
+    margin-bottom: 0.5rem;
+  }
+  
+  .french-script {
+    font-family: 'French Script MT', 'Vivaldi', cursive; /* French script font for title */
+  }
+  
+  .regular-text {
+    font-weight: normal; /* Set to normal to remove bold styling */
+  }
+  
+  #description {
+    text-align: center;
+    font-size: 1.2rem; /* Increased font size for the description */
+    color: #5b7260; /* A more muted green for subtlety */
+    margin-bottom: 2rem; /* Increased margin to separate from the form */
+  }
+  
+  /* Form Container */
+  form {
+    background-color: #fdfaf1; /* Soft off-white background for the form */
+    border: 1px solid #c0b283; /* Beige border to add some definition */
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px; /* Max width to prevent squishing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px;
+  }
+  
+  /* Labels and Inputs */
+  label {
+    display: block;
+    font-weight: bold;
+    color: #3e4c39;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem; /* Adjust top margin */
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 0.75rem; /* Increased padding for better spacing */
+    border: 1px solid #b8b09a; /* Beige-gray border */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+    color: #3e4c39;
+    outline: none;
+    box-sizing: border-box; /* Prevents padding from affecting width */
+  }
+  
+  /* Reduce the space between fields */
+  fieldset {
+    border: none;
+    margin-bottom: 0.75rem; /* Reduced margin between fieldsets */
+  }
+  
+  /* Focus Styling */
+  input:focus, textarea:focus, select:focus {
+    border-color: #556b2f; /* Dark green focus border */
+  }
+  
+  /* Radio and Checkboxes */
+  input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+  }
+  
+  .inline {
+    margin-right: 1rem;
+    color: #3e4c39;
+  }
+  
+  /* Legends */
+  legend {
+    font-size: 1.3rem; /* Slightly larger font size for legends */
+    font-weight: bold;
+    color: #556b2f; /* Classy deep green for legend text */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Submit Button */
+  input[type="submit"] {
+    background-color: #3e4c39; /* Deep green for the button */
+    color: #fdfaf1; /* Light text for contrast */
+    font-weight: bold;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem; /* Slightly larger font for better visibility */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #556b2f; /* Lighter green on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    form {
+      padding: 1.5rem;
+    }
+  
+    #title {
+      font-size: 2rem; /* Adjusted title font size for smaller screens */
+    }
+  
+    #description {
+      font-size: 1rem; /* Adjusted description font size for smaller screens */
+    }
+  
+    input[type="submit"] {
+      padding: 0.6rem; /* Adjusted padding for smaller screens */
+    }
+  }
